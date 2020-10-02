@@ -18,6 +18,7 @@ func _ready():
 	update_color()
 	start_paddle()
 
+
 func _physics_process(_delta):
 	var target = get_viewport().get_mouse_position().x
 	target = clamp(target, 0, get_viewport().size.x)
@@ -30,8 +31,9 @@ func _physics_process(_delta):
 	position.x += s*t
 
 	if HUD.paddle_stretch:
-		pass
-
+		var w = 1 + (distort.x * p)
+		var h = 1 - (1/distort.y * p)
+		change_size(w,h)
 
 
 func change_size(w, h):
@@ -41,7 +43,11 @@ func change_size(w, h):
 
 func start_paddle():
 	if HUD.paddle_appear:
-		pass
+		var target_pos = position
+		var appear_duration = 2.0
+		position.y = -100
+		$Tween.interpolate_property(self, "position", position, target_pos, appear_duration, Tween.TRANS_ELASTIC, Tween.EASE_IN_OUT)
+		$Tween.start()
 	else:
 		pass
 

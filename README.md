@@ -5,14 +5,14 @@ Description:
 2D brick breaker game made in Godot with extra features. 
 
 ## TODO List:
-3. Screen Shake doesn't appear to be working. 
-4. Add second level
-5. Add button to get to second level
-6. Make button appear when all bricks broken
-8. Make play again menu appear after 2nd level won
-9. Figure out how to make 3 lives with life count visible
+1. Screen Shake doesn't appear to be working. 
+2. Paddle shrink and stretch not working
+3. Add second level
+4. Add button to get to second level
+5. Make button appear when all bricks broken
+6. Make play again menu appear after 2nd level won
+7. Figure out how to make 3 lives with life count visible
         Make bottom wall the "life remover"
-11. Make paddle shrink and stretch
 
 
 ## Implementation

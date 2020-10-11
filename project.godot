@@ -15,18 +15,17 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Brick Breaker"
-run/main_scene="res://Menu/Main Menu.tscn"
+config/name="Tweening and Screen Shake"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-MainMenu="*res://Menu/Main Menu.tscn"
+Global="*res://HUD/Global.gd"
 
 [display]
 
 window/size/height=768
-window/dpi/allow_hidpi=true
 
 [input]
 

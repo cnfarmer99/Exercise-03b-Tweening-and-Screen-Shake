@@ -2,13 +2,11 @@ extends RigidBody2D
 
 export var max_speed = 400.0
 export var min_speed = 100.0
-onready var camera = get_node("/root/Game/Camera")
+onready var camera = get_node("/root/LevelOne/Camera")
 
 var wall_trauma = 0.005
 var paddle_trauma = 0.008
 var brick_trauma = 0.01
-var shake_amount = 1
-
 
 func _ready():
 	contact_monitor = true
@@ -19,8 +17,8 @@ func update_color():
 	$Color.color = Color8(34,184,207)
 
 #add in screen shake
-func screen_shake(shake_amount):
-	camera.add_trauma(shake_amount)
+func screen_shake(amount):
+	camera.add_trauma(amount)
 
 func _physics_process(_delta):
 	var bodies = get_colliding_bodies()

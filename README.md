@@ -22,7 +22,6 @@ Bricks fall down
 Paddle expands and stretches
 Countdown until level starts 
 
-
 ## References
 Open Color for color values [https://yeun.github.io/open-color/ingredients.html]
 

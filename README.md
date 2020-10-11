@@ -1,16 +1,33 @@
-# Exercise-03b-Tweening-and-Screen-Shake
-Exercise for MSCH-C220, 24 September 2020
+# 03-Juicy-Brick-Breaker
+Basic 2D brick breaker game with extra features. Oct 11, 2020
 
-The second part of an exploration of the "Juice it or Lose it" GDC 2012 presentation in Godot.
+Description:
+2D brick breaker game made in Godot with extra features. 
+
+## TODO List:
+3. Screen Shake doesn't appear to be working. 
+4. Add second level
+5. Add button to get to second level
+6. Make button appear when all bricks broken
+8. Make play again menu appear after 2nd level won
+9. Figure out how to make 3 lives with life count visible
+        Make bottom wall the "life remover"
+11. Make paddle shrink and stretch
+
 
 ## Implementation
-Built using Godot 3.2.2
+Background runs through a cascading rainbow
+Particles for paddle, bricks, and walls
+Bricks fall down
+Paddle expands and stretches
+Countdown until level starts 
+
 
 ## References
-[Juice it or Lose it](https://www.youtube.com/watch?v=Fy0aCDmgnxg)
+Open Color for color values [https://yeun.github.io/open-color/ingredients.html]
 
 ## Future Development
-Music and sound effects; shaders; add a face!
+None currently
 
-## Created by 
+## Created by
 Cierra Farmer
